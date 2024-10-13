@@ -22,7 +22,7 @@ import java.util.Optional;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@RequestMapping("/api/category")
+@RequestMapping("/api")
 public class CategoryController {
 
     @Autowired
@@ -31,7 +31,7 @@ public class CategoryController {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    @GetMapping("/all")
+    @GetMapping("/category/all")
     ResponseEntity<List<Category>> getCategories() {
         return ResponseEntity.ok(categoryService.getCategories());
     }
