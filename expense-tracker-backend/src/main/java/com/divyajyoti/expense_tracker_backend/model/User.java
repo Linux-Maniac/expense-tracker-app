@@ -25,6 +25,4 @@ public class User {
     @Column(name = "EMAIL")
     private String email;
 
-    @OneToMany(mappedBy = "user")
-    private Set<Category> categories;
 }

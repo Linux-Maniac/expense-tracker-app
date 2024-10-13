@@ -15,14 +15,10 @@ public class Category {
 
     @Id
     @Column(name = "ID")
-    private Integer Id;
+    private Integer id;
 
     @Column(name = "CATEGORY_NAME")
     @NonNull
     private String name;
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "USER_ID")
-    private User user;
 
 }
